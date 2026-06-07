@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arvin John Portfolio</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+
+        <!-- Replace image path if needed -->
+        <img src="img/profile.jpg" alt="Profile Photo" class="profile-img">
+
+        <div class="header-text">
+          <h1>ARVIN JOHN C. SISON</h1>
+          <h3>Student / Aspiring IT Professional</h3>
+
+          <div class="contact-info">
+            <p>📍 Purok 1, San Vicente, Panabo City</p>
+            <p>📞 09352067896</p>
+            <p>✉️ <a href="mailto:sison.arvinjohn@dnsc.edu.ph">sison.arvinjohn@dnsc.edu.ph</a></p>
+            <p>📘 <a href="https://www.facebook.com/arvin.john.sison.2025" target="_blank">Arvin John Sison</a></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+
+      <div class="about">
+        <p>
+          I am a dedicated and hardworking Information Technology student from
+          Davao Del Norte State College. I am passionate about technology,
+          web development, troubleshooting, and learning new programming skills.
+          I aim to grow my experience in the IT industry and contribute my skills
+          to future projects and organizations.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERSONAL INFORMATION -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Personal Information</h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>Age</h3>
+          <p>25 years old</p>
+        </div>
+
+        <div class="card">
+          <h3>Date of Birth</h3>
+          <p>April 16, 2001</p>
+        </div>
+
+        <div class="card">
+          <h3>Place of Birth</h3>
+          <p>Tagum City, Davao Del Norte</p>
+        </div>
+
+        <div class="card">
+          <h3>Status</h3>
+          <p>Single</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Educational Background</h2>
+
+      <div class="education-item">
+        <h3>Tertiary Education</h3>
+        <p><strong>School:</strong> Davao Del Norte State College</p>
+        <p><strong>Year:</strong> 2020 - Present</p>
+      </div>
+
+      <div class="education-item">
+        <h3>Senior High School</h3>
+        <p><strong>School:</strong> Northlink Technological College</p>
+        <p><strong>Year:</strong> 2018 - 2020</p>
+      </div>
+
+      <div class="education-item">
+        <h3>Junior High School</h3>
+        <p><strong>School:</strong> Francisco Adlaon Learning Institute</p>
+        <p><strong>Year:</strong> 2013 - 2018</p>
+      </div>
+
+      <div class="education-item">
+        <h3>Primary Education</h3>
+        <p><strong>School:</strong> Francisco Adlaon Learning Institute</p>
+        <p><strong>Year:</strong> 2007 - 2013</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Certifications & Achievements</h2>
+
+      <div class="certificates">
+        <div class="certificate-card" onclick="openModal('img/cisco1.png', 'Introduction to Cybersecurity')">
+          <div class="certificate-image">
+            <img src="img/cisco1.png" alt="Introduction to Cybersecurity Certificate">
+          </div>
+          <div class="certificate-info">
+            <h3>Introduction to Cybersecurity</h3>
+            <p>Completed a comprehensive course on cybersecurity fundamentals, covering network security, threat analysis, and protection strategies.</p>
+          </div>
+        </div>
+
+        <div class="certificate-card" onclick="openModal('img/cisco2.png', 'CCNA Switching, Routing, and Wireless Essentials')">
+          <div class="certificate-image">
+            <img src="img/cisco2.png" alt="CCNA Switching, Routing, and Wireless Essentials Certificate">
+          </div>
+          <div class="certificate-info">
+            <h3>CCNA: Switching, Routing, and Wireless Essentials</h3>
+            <p>Successfully completed professional-level networking certification covering advanced switching, routing protocols, and wireless network technologies.</p>
+          </div>
+        </div>
+
+        <div class="certificate-card" onclick="openModal('img/cert1.png', 'Journey from Science Practitioner to Information Technology Specialist')">
+          <div class="certificate-image">
+            <img src="img/cert1.png" alt="Journey from Science Practitioner to Information Technology Specialist Certificate">
+          </div>
+          <div class="certificate-info">
+            <h3>Journey from Science Practitioner to Information Technology Specialist</h3>
+            <p>A certificate recognizing the transition from science practice to IT specialization, highlighting knowledge growth and technical skill development.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IT PROJECTS -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">IT Related Projects That I Created</h2>
+
+      <div class="projects">
+        <div class="project project-left" onclick="openProjectModal('img/Project1.png', 'Scan Museo Panabo', 'Developed a web application with responsive design, user authentication, and database integration to solve real-world challenges.')">
+          <div class="project-image">
+            <img src="img/Project1.png" alt="IT Project 1">
+          </div>
+          <div class="project-info">
+            <h3>Scan Museo Panabo</h3>
+            <p>Developed a web application that generates QR codes for guest attendance tracking. The admin panel allows for easy management and reporting.</p>
+          </div>
+        </div>
+
+        <div class="project-carousel">
+          <div class="carousel-inner">
+            <button class="carousel-control prev" onclick="changeProject(-1)" aria-label="Previous project">&#10094;</button>
+            <div class="carousel-slide">
+              <div class="carousel-item active" data-title="Pet Bottle Solar Charging Station in Senior High School Students" data-description="A complete renewable energy system for senior high school students, combining solar panels with repurposed PET bottles to create a solar charging station for mobile devices. The system includes sunlight harvesting, energy storage, charging ports, and student-led sustainability education, demonstrating how green technology can be built using local materials and practical design.">
+                <img src="img/S1.jpg" alt="Solar image 1">
+              </div>
+              <div class="carousel-item" data-title="Pet Bottle Solar Charging Station in Senior High School Students" data-description="A complete renewable energy system for senior high school students, combining solar panels with repurposed PET bottles to create a solar charging station for mobile devices. The system includes sunlight harvesting, energy storage, charging ports, and student-led sustainability education, demonstrating how green technology can be built using local materials and practical design.">
+                <img src="img/S2.jpg" alt="Solar image 2">
+              </div>
+              <div class="carousel-item" data-title="Pet Bottle Solar Charging Station in Senior High School Students" data-description="A complete renewable energy system for senior high school students, combining solar panels with repurposed PET bottles to create a solar charging station for mobile devices. The system includes sunlight harvesting, energy storage, charging ports, and student-led sustainability education, demonstrating how green technology can be built using local materials and practical design.">
+                <img src="img/S3.jpg" alt="Solar image 3">
+              </div>
+              <div class="carousel-item" data-title="Pet Bottle Solar Charging Station in Senior High School Students" data-description="A complete renewable energy system for senior high school students, combining solar panels with repurposed PET bottles to create a solar charging station for mobile devices. The system includes sunlight harvesting, energy storage, charging ports, and student-led sustainability education, demonstrating how green technology can be built using local materials and practical design.">
+                <img src="img/S4.jpg" alt="Solar image 4">
+              </div>
+              <div class="carousel-item" data-title="Pet Bottle Solar Charging Station in Senior High School Students" data-description="A complete renewable energy system for senior high school students, combining solar panels with repurposed PET bottles to create a solar charging station for mobile devices. The system includes sunlight harvesting, energy storage, charging ports, and student-led sustainability education, demonstrating how green technology can be built using local materials and practical design.">
+                <img src="img/S5.jpg" alt="Solar image 5">
+              </div>
+            </div>
+            <button class="carousel-control next" onclick="changeProject(1)" aria-label="Next project">&#10095;</button>
+          </div>
+
+          <div class="carousel-details">
+            <h3 id="carouselTitle">Pet Bottle Solar Charging Station in Senior High School Students</h3>
+            <p id="carouselDescription">A complete renewable energy system for senior high school students, combining solar panels with repurposed PET bottles to create a solar charging station for mobile devices. The system includes sunlight harvesting, energy storage, charging ports, and student-led sustainability education.</p>
+            <div class="carousel-dots">
+              <span class="dot active" onclick="setProject(0)"></span>
+              <span class="dot" onclick="setProject(1)"></span>
+              <span class="dot" onclick="setProject(2)"></span>
+              <span class="dot" onclick="setProject(3)"></span>
+              <span class="dot" onclick="setProject(4)"></span>
+              <span class="dot" onclick="setProject(5)"></span>
+              <span class="dot" onclick="setProject(6)"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Arvin John C. Sison | Portfolio Website</p>
+  </footer>
+
+  <!-- CERTIFICATE MODAL -->
+  <div id="certificateModal" class="modal" onclick="closeModal(event)">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img id="modalImage" src="" alt="Certificate">
+      <p id="modalTitle"></p>
+    </div>
+  </div>
+
+  <!-- PROJECT MODAL -->
+  <div id="projectModal" class="modal" onclick="closeProjectModal(event)">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <span class="close" onclick="closeProjectModal()">&times;</span>
+      <img id="projectModalImage" src="" alt="Project">
+      <div class="project-modal-info">
+        <h2 id="projectModalTitle"></h2>
+        <p id="projectModalDescription"></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openModal(imageSrc, title) {
+      const modal = document.getElementById('certificateModal');
+      const modalImage = document.getElementById('modalImage');
+      const modalTitle = document.getElementById('modalTitle');
+      
+      modalImage.src = imageSrc;
+      modalTitle.textContent = title;
+      modal.style.display = 'block';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal(event) {
+      const modal = document.getElementById('certificateModal');
+      modal.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+
+    // Close modal when pressing Escape key
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        const certModal = document.getElementById('certificateModal');
+        const projModal = document.getElementById('projectModal');
+        if (certModal.style.display === 'block') {
+          closeModal();
+        }
+        if (projModal.style.display === 'block') {
+          closeProjectModal();
+        }
+      }
+    });
+
+    function openProjectModal(imageSrc, title, description) {
+      const modal = document.getElementById('projectModal');
+      const modalImage = document.getElementById('projectModalImage');
+      const modalTitle = document.getElementById('projectModalTitle');
+      const modalDescription = document.getElementById('projectModalDescription');
+      
+      modalImage.src = imageSrc;
+      modalTitle.textContent = title;
+      modalDescription.textContent = description;
+      modal.style.display = 'block';
+      document.body.style.overflow = 'hidden';
+    }
+
+    let currentCarouselIndex = 0;
+    const carouselItems = [
+      {
+        title: 'Pet Bottle Solar Charging Station in Senior High School Students',
+        description: 'A complete renewable energy system for senior high school students, combining solar panels with repurposed PET bottles to create a solar charging station for mobile devices. The system includes sunlight harvesting, energy storage, charging ports, and student-led sustainability education, demonstrating how green technology can be built using local materials and practical design.',
+      },
+      {
+        title: 'Pet Bottle Solar Charging Station in Senior High School Students',
+        description: 'A complete renewable energy system for senior high school students, combining solar panels with repurposed PET bottles to create a solar charging station for mobile devices. The system includes sunlight harvesting, energy storage, charging ports, and student-led sustainability education, demonstrating how green technology can be built using local materials and practical design.',
+      },
+      {
+        title: 'Pet Bottle Solar Charging Station in Senior High School Students',
+        description: 'A complete renewable energy system for senior high school students, combining solar panels with repurposed PET bottles to create a solar charging station for mobile devices. The system includes sunlight harvesting, energy storage, charging ports, and student-led sustainability education, demonstrating how green technology can be built using local materials and practical design.',
+      },
+      {
+        title: 'Pet Bottle Solar Charging Station in Senior High School Students',
+        description: 'A complete renewable energy system for senior high school students, combining solar panels with repurposed PET bottles to create a solar charging station for mobile devices. The system includes sunlight harvesting, energy storage, charging ports, and student-led sustainability education, demonstrating how green technology can be built using local materials and practical design.',
+      },
+      {
+        title: 'Pet Bottle Solar Charging Station in Senior High School Students',
+        description: 'A complete renewable energy system for senior high school students, combining solar panels with repurposed PET bottles to create a solar charging station for mobile devices. The system includes sunlight harvesting, energy storage, charging ports, and student-led sustainability education, demonstrating how green technology can be built using local materials and practical design.',
+      },
+      {
+        title: 'Pet Bottle Solar Charging Station in Senior High School Students',
+        description: 'A complete renewable energy system for senior high school students, combining solar panels with repurposed PET bottles to create a solar charging station for mobile devices. The system includes sunlight harvesting, energy storage, charging ports, and student-led sustainability education, demonstrating how green technology can be built using local materials and practical design.',
+      },
+      {
+        title: 'Pet Bottle Solar Charging Station in Senior High School Students',
+        description: 'A complete renewable energy system for senior high school students, combining solar panels with repurposed PET bottles to create a solar charging station for mobile devices. The system includes sunlight harvesting, energy storage, charging ports, and student-led sustainability education, demonstrating how green technology can be built using local materials and practical design.',
+      }
+    ];
+
+    function updateCarousel() {
+      const items = document.querySelectorAll('.carousel-item');
+      const dots = document.querySelectorAll('.dot');
+      const title = document.getElementById('carouselTitle');
+      const description = document.getElementById('carouselDescription');
+
+      items.forEach((item, index) => {
+        item.classList.toggle('active', index === currentCarouselIndex);
+      });
+
+      dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentCarouselIndex);
+      });
+
+      title.textContent = carouselItems[currentCarouselIndex].title;
+      description.textContent = carouselItems[currentCarouselIndex].description;
+    }
+
+    function changeProject(step) {
+      currentCarouselIndex = (currentCarouselIndex + step + carouselItems.length) % carouselItems.length;
+      updateCarousel();
+    }
+
+    function setProject(index) {
+      currentCarouselIndex = index;
+      updateCarousel();
+    }
+
+    updateCarousel();
+    setInterval(() => changeProject(1), 5000);
+
+    function closeProjectModal(event) {
+      const modal = document.getElementById('projectModal');
+      modal.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+  </script>
+
+</body>
+</html>
